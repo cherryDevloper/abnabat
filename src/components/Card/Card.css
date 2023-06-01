@@ -1,0 +1,30 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-container > img:first-child {
+  width: 100%;
+  border-radius: 1.2rem;
+  object-fit: cover;
+  height: 300px;
+}
+.card-container > span > img:last-child {
+  padding-left: 10px;
+}
+.card-container > span {
+  font-size: 12px;
+  padding: 5px 0;
+}
+@media screen and (min-width: 768px) {
+  .card-container > img:first-child {
+    height: 400px;
+  }
+  .card-container {
+    padding: 1rem 4rem;
+  }
+  .card-container > span {
+    font-size: 1rem;
+  }
+}

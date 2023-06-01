@@ -1,0 +1,53 @@
+.action-sheet {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.action-sheet.open {
+  transform: translateY(0);
+  height: auto;
+}
+
+.action-sheet.closed {
+  transform: translateY(100%);
+  height: 0;
+}
+
+.action-sheet-button {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+  background-color: white;
+  border-top: 1px solid #ccc;
+}
+
+.action-sheet-button:hover {
+  background-color: #eee;
+}
+
+.action-sheet-button:last-of-type {
+  border-bottom: 1px solid #ccc;
+}
+
+.action-sheet-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1rem;
+}
+
+.action-sheet-menu > span {
+  padding: 1rem;
+  cursor: pointer;
+}
